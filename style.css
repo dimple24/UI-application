@@ -1,6 +1,7 @@
 body {
   background-image: url("images/home-banner.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
  .dot {
@@ -10,11 +11,12 @@ body {
   border-radius: 50%;
   display: inline-block;
 }
-.container{
-  padding: 109px;
-    margin: 104px;
-}
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent; 
+}
+.jumbotron {
+  padding: 195px;
+ background-color: transparent;
 }
