@@ -3,6 +3,9 @@ body {
   background-repeat: no-repeat;
   
 }
+.navbar-default .navbar-nav>li>a {
+     color: #ffffff; 
+}
 .card{
 	border-radius: 5px !important;
 }
@@ -35,6 +38,12 @@ body {
   padding-left: 0px;
  
 }
+.col-sm-12{
+padding:0px;
+
+}
 .contentbox{
 padding:98px;
 }
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+  .toggle.ios .toggle-handle { border-radius: 20px; }
