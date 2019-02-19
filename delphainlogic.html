@@ -4,19 +4,21 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 </head>
 
-<body class="home-banner filter">
+<body>
 	<!-- /.navbar start -->
-	<header class="heading">
-		<nav class="navbar navbar-default">
-			<div class="">
+	<div class="col-xs-12 home-banner">
+		<header class="heading">
+			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -106,19 +108,18 @@
 					</ul>
 
 				</div>
-			</div>
-		</nav>
-	</header>
-	<div class="center col-lg-8 col-md-8 col-md-offset-2 center col-xs-12 brand-white jumbotron">
-		<h3>Custom Solutins:Built to perform</h3>
-		<p>Delphian logic helps you to... Lorem ipsum dolor sitamet,consectetuer adipiscing elit .</p>
-		<p>Aenean commodo ligula eget dolar.Aenean massa.</p>
-		<a class="btn-danger btn-lg" href="#" role="button">Learn more</a>
+			</nav>
+		</header>
+		<div class="center col-lg-8 col-md-8 col-md-offset-2 center col-xs-12 col-xs-12 brand-white ">
+			<h3 class="font-size-larger">Custom Solutins:Built to perform</h3>
+			<p>Delphian logic helps you to... Lorem ipsum dolor sitamet,consectetuer adipiscing elit .</p>
+			<p>Aenean commodo ligula eget dolar.Aenean massa.</p>
+			<a class="btn-danger btn-lg" href="#" role="button">Learn more</a>
+		</div>
 	</div>
-
 	<div class="row col-sm-12 margin-t-9">
 		<div class="col-sm-4 col-sm-offset-1">
-			<div class="card row">
+			<div class="card row-1">
 				<img src="images/DL-learning.svg">
 				<div class="padding-l-25px">
 					<div class="card-body">
@@ -129,7 +130,7 @@
 			</div>
 		</div>
 		<div class="col-sm-4 col-sm-offset-1">
-			<div class="card row">
+			<div class="card row-1">
 				<img src="images/DL-technology.svg">
 				<div class="padding-l-25px">
 					<h6 class="card-text">Technology</h6>
@@ -138,7 +139,7 @@
 			</div>
 		</div>
 		<div class="col-sm-4 col-sm-offset-1">
-			<div class="card row">
+			<div class="card row-1">
 				<img src="images/DL-communication.svg">
 				<div class="padding-l-25px">
 					<h6 class="card-text">Communication</h6>
@@ -230,23 +231,23 @@
 			<h4> DelphianLogic in Action</h4>
 			<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit.Aenean commodo </p>
 		</div>
-		<div class="col-sm-3 col-sm-offset-1 center brand-white-bg">
+		<div class="col-sm-4 center brand-white-bg">
 
-			<div class="card-2 row">
+			<div class="card-2 row-1" onclick="$(this).myfunction()">
 				<img src="images/DL-learning.svg" />
 				<div class="padding-l-25px">
 					<h5 class="font-semibold">Learning</h5>
 				</div>
 			</div>
 
-			<div class="card-2 row">
+			<div class="card-2 row-1">
 				<img src="images/DL-technology.svg" />
 				<div class="padding-l-25px">
 					<h5 class="font-semibold">Technology</h5>
 				</div>
 			</div>
 
-			<div class="card-2 row">
+			<div class="card-2 row-1">
 				<img src="images/DL-communication.svg" />
 				<div class="padding-l-25px">
 					<h5 class="font-semibold">Communication</h5>
@@ -254,13 +255,61 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-4 brand-fourth-bg">
-			<div class="contentbox brand-white bg-height">
-				<p> DIGITAL LEARNING INFRASTUCTURE</p>
-				<h3>Usability enhancement and Training for Transaction Portal for Customers</h3>
-				<a class="brand-white" href="#!">Learn more <img src="images/arrow-right.svg" /> </a>
+		<!-- carousal sart-->
+		<div id="notch" class="notch"></div>
+		<div class="container col-sm-4 brand-fourth-bg brand-white bg-height center ">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!--- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- Left and right controls -->
+				<a class="left" href="#myCarousel" data-slide="prev">
+					<img src="images/arrow-down.svg" />
+					<span class="sr-only">Previous</span>
+				</a>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+
+						<div>
+							<p class="gray-lighter-bg"> DIGITAL LEARNING INFRASTUCTURE</p>
+							<h3>Usability enhancement and Training for Transaction Portal for Customers</h3>
+							<a class="brand-white" href="#!">Learn more <img src="images/arrow-right.svg" /> </a>
+						</div>
+
+					</div>
+
+					<div class="item">
+
+						<div>
+							<p class="gray-lighter-bg"> DIGITAL TECHNOLOGY INFRASTUCTURE</p>
+							<h3>Usability enhancement and Training for Transaction Portal for Customers</h3>
+							<a class="brand-white" href="#!">Learn more <img src="images/arrow-right.svg" /> </a>
+						</div>
+
+					</div>
+
+					<div class="item">
+
+						<div>
+							<p class="gray-lighter-bg"> DIGITAL COMMUNICATION INFRASTUCTURE</p>
+							<h3>Usability enhancement and Training for Transaction Portal for Customers</h3>
+
+							<a class="brand-white" href="#!">Learn more <img src="images/arrow-right.svg" /> </a>
+						</div>
+
+					</div>
+				</div>
+
+
 			</div>
 		</div>
+		<!----carousal-->
+
 		<div class="col-sm-4 brand-white-bg insurance-img">
 
 			<div class="switch">
@@ -440,7 +489,14 @@
 	</div>
 	<!-- Footer -->
 
-
+	<!----<script>$('.carousel').onhover({
+		dataslide : left
+	  })</script>---->
+	<script>
+		$(".card-2").on("click", function () {
+			var prop = $('#notch').css("top") + 100;
+			$('#notch').css("top", prop);
+		});</script>
 </body>
 
 </html>
