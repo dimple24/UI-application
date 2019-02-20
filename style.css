@@ -36,8 +36,17 @@ body {
   width: 300px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+.card-3{
+  background: #fff;
+    margin: 1rem;
+    height: 315px;
+    position: relative;
+    width: 325px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 .card:hover,
-.card-2:hover {
+.card-2:hover,
+.card-3:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .padding-4 {
@@ -73,7 +82,7 @@ hr{
   height: 20px;
   background: #64b4c8;
   transform: rotate(45deg);
-  left: 366px;
+  left: 451px;
   top: 45px;
 }
 .row {
