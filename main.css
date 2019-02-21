@@ -45,7 +45,10 @@
     .font-size-jumbo    { font-size: 30px; line-height: 1.2   }
     .font-size-giant    { font-size: 36px; line-height: 1.1   }
     .home-banner        { height: 350px; background-size: cover; }
-    .row { display: block }
+    .row                { display: block }
+    .card               {width: 95%}
+    .switch             {right: 2%;}
+    .display {display: none}
 }
 
 /* classes for border radiuses */
