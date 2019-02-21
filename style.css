@@ -5,8 +5,6 @@ body {
   background-image: url(images/home-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
-  
 }
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
@@ -22,26 +20,20 @@ body {
   background: #fff;
   border-radius: 5px;
   margin: 1rem;
-  height: 120px;
-  position: relative;
-  width: 325px;
+  width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .card-2 {
   background: #fff;
   border-radius: 5px;
   margin: 1rem;
-  height: 82px;
-  position: relative;
   width: 300px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .card-3{
   background: #fff;
     margin: 1rem;
-    height: 315px;
-    position: relative;
-    width: 325px;
+    height: 400px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .card:hover,
@@ -72,7 +64,7 @@ hr{
   background-color: transparent;
   border-color: transparent;
 }
-.notch{
+/* .notch{
   position: relative;
 }
 .notch:after {
@@ -84,7 +76,7 @@ hr{
   transform: rotate(45deg);
   left: 451px;
   top: 45px;
-}
+} */
 .row {
   display: inline-flex;
   padding: 20px 15px;
@@ -121,7 +113,7 @@ hr{
   background-image: url(images/first-banner-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 307px;
+  min-height: 397px;
 }
 .contentbox {
   padding: 13%;
@@ -134,8 +126,9 @@ border: 2px solid
 }
 /* for switch */
 .switch {
-  padding-left: 35%;
-  padding-top: 4%;
+  position: absolute;
+  right: 17%;
+  top: 8%;
 }
 .cmn-toggle {
   position: absolute;
@@ -151,14 +144,14 @@ border: 2px solid
   user-select: none;
 }
 .bg-height {
-  height: 306px;
+  height: 397px;
 }
 
 /* Round Style CSS Toggle Switch */
 
 input.cmn-toggle-round + label {
   width: 120px;
-  height: 60px;
+  height: 63px;
 }
 
 input.cmn-toggle-round + label:before,
