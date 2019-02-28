@@ -2,10 +2,20 @@ body {
   font-family: sans-serif;
 }
 .home-banner {
-  background-image: url(images/home-banner.jpg);
+  
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  background: /* top, transparent*/ linear-gradient( #11324db3, #11324db3 ), 
+  /* bottom, image */ url(images/home-banner.jpg);
 }
+  
+
+div.cover  {
+color: #fff;
+font-weight: bold
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
 }
@@ -33,7 +43,7 @@ body {
 .card-3{
   background: #fff;
     margin: 1rem;
-    height: 400px;
+    height: 364px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .card:hover,
@@ -64,6 +74,9 @@ hr{
   background-color: transparent;
   border-color: transparent;
 }
+.height-320{
+height: 320px;
+}
 /* .notch{
   position: relative;
 }
@@ -84,20 +97,23 @@ hr{
 }
 .row-1 {
   display: inline-flex;
-  padding: 20px 15px;
+  padding: 10px 15px;
   align-items: center;
 }
 .center {
   text-align: center;
 }
+.padding-top{
+padding-top: 4%;
+}
 .left {
   text-align: left;
 }
 .contact-box{
-  height: 400px;
+  height: 290px;
 }
 .box-p-7-13{
-  padding: 7% 13% 0 13%;
+      padding: 2% 9% 0 4%;
 } 
 .brand-color-secondary {
   background-color: #11324d;
@@ -113,7 +129,7 @@ hr{
   background-image: url(images/first-banner-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 397px;
+  min-height: 320px;
 }
 .contentbox {
   padding: 13%;
@@ -144,7 +160,7 @@ border: 2px solid
   user-select: none;
 }
 .bg-height {
-  height: 397px;
+  height: 320px;
 }
 
 /* Round Style CSS Toggle Switch */
